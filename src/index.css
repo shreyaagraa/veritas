@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #080a0e;
+    --canvas-subtle: #0d1015;
+    --canvas-surface: #12161f;
+    --canvas-raised: #181d28;
+    --border-hairline: #1c222e;
+    --border-subtle: #273040;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-btc: #f5d13b;
+    --accent-btc-light: #fef08a;
+    --accent-btc-gold: #facc15;
+    --accent-btc-glow: rgba(245, 209, 59, 0.18);
+    --accent-focus: #f5d13b;
+  }
+
+  body {
+    background-color: #080a0e;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Custom scrollbar for clean dark interface with Bitcoin light-yellow hover */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080a0e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c222e;
+    border-radius: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f5d13b;
+  }
+}
+
+/* Custom Bitcoin accent classes */
+.text-btc {
+  color: #f5d13b;
+}
+
+.text-btc-light {
+  color: #fef08a;
+}
+
+.bg-btc {
+  background-color: #f5d13b;
+}
+
+.bg-btc-subtle {
+  background-color: rgba(245, 209, 59, 0.08);
+}
+
+.border-btc {
+  border-color: #f5d13b;
+}
+
+.border-btc-subtle {
+  border-color: rgba(245, 209, 59, 0.25);
+}
+
+.glow-btc {
+  box-shadow: 0 0 15px rgba(245, 209, 59, 0.22);
+}
+
+/* Print styling for investigation dossiers */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  article {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

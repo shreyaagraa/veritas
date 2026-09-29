@@ -1,0 +1,8 @@
+{
+  "name": "Veritas Forensics - Virtual Asset Tracing & Attribution",
+  "description": "Enterprise cryptocurrency fund tracing, multi-hop transaction graph analysis, and verified VASP entity attribution for financial crime and compliance investigators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
